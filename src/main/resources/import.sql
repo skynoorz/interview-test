@@ -1,0 +1,1 @@
+INSERT INTO users (username, password, birthday, joining, balance) VALUES ('ron', '$2a$12$U8EIsOY1VOx2Q1nfZXVt/u.cDXGndC8We2CSZZuXkIj793zOj1HRK', '1995-03-18', '2021-12-20', 400);
