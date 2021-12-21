@@ -12,7 +12,11 @@ public class Role implements Serializable {
     private Long id;
 
     @Column(unique = true, length = 20)
-    private String nombre;
+    private String name;
+
+    public Role() {
+
+    }
 
     public Long getId() {
         return id;
@@ -22,11 +26,16 @@ public class Role implements Serializable {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String nombre) {
+        this.name = nombre;
+    }
+
+    public Role(Long id, String name) {
+        this.id = id;
+        this.name = name;
     }
 }
